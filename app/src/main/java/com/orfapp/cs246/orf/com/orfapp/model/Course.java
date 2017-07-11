@@ -4,6 +4,10 @@ import java.util.List;
 
 /**
  * Created by Nacher on 20/6/2017.
+ * We will have courses that contain students, teachers, and years.
+ * Each course will have one teacher, multiple students, and one year.
+ * This will help the teacher to search for a specific student and
+ * their information inside of the course.
  */
 
 public class Course {
