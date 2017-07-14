@@ -1,5 +1,10 @@
 package com.orfapp.cs246.orf.com.orfapp.model;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.field.ForeignCollectionField;
+import com.j256.ormlite.table.DatabaseTable;
+
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -10,16 +15,26 @@ import java.util.List;
  * their information inside of the course.
  */
 
-public class Course {
+@DatabaseTable(tableName = "course")
+public class Course implements Serializable {
 
+    @DatabaseField(generatedId = true)
     private int idClass;
+
+    @DatabaseField
     private Teacher teacher;
+
+    @ForeignCollectionField
     List<Student> students;
+
+    @DatabaseField
     private int year;
 
     public Course(){
 
     }
+
+    //<editor-fold desc=" Getters and Setters ">
 
     public int getIdClass() {
         return idClass;
@@ -52,4 +67,35 @@ public class Course {
     public void setYear(int year) {
         this.year = year;
     }
+
+    //</editor-fold>
+
+    //<editor-fold desc=" Hash and equals ">
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Course course = (Course) o;
+
+        if (idClass != course.idClass) return false;
+        if (year != course.year) return false;
+        if (teacher != null ? !teacher.equals(course.teacher) : course.teacher != null)
+            return false;
+        return students != null ? students.equals(course.students) : course.students == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = idClass;
+        result = 31 * result + (teacher != null ? teacher.hashCode() : 0);
+        result = 31 * result + (students != null ? students.hashCode() : 0);
+        result = 31 * result + year;
+        return result;
+    }
+
+    //</editor-fold>
+
 }

@@ -27,7 +27,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
-
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
     //This is for the graph portion
     compile 'com.github.PhilJay:MPAndroidChart:v3.0.2'
+    // https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-android
+    compile group: 'com.j256.ormlite', name: 'ormlite-android', version: '4.48'
+    // https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-core
+    compile group: 'com.j256.ormlite', name: 'ormlite-core', version: '4.48'
 }

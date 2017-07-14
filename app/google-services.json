@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1075952369723",
+    "firebase_url": "https://com-orfapp-cs246-orf.firebaseio.com",
+    "project_id": "com-orfapp-cs246-orf",
+    "storage_bucket": "com-orfapp-cs246-orf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075952369723:android:ff1b30d0b0b71613",
+        "android_client_info": {
+          "package_name": "com.orfapp.cs246.orf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075952369723-j9n4oqrrpqveho1qrokl90l9ir0tumio.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.orfapp.cs246.orf",
+            "certificate_hash": "5a8fc35bfe44926b5c142152d259ccf6d615ca1e"
+          }
+        },
+        {
+          "client_id": "1075952369723-e5livihtvhmoj2jr40580qakci30dcfi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJIf2srCXe3yOYs_jYxbMkPXp26goqTGY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075952369723-e5livihtvhmoj2jr40580qakci30dcfi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

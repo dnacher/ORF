@@ -1,0 +1,150 @@
+#
+# generated on 2017/07/14 12:34:11
+#
+# --table-start--
+dataClass=com.orfapp.cs246.orf.com.orfapp.model.Teacher
+tableName=teacher
+# --table-fields-start--
+# --field-start--
+fieldName=idTeacher
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+canBeNull=false
+indexName=teacher_name_idx
+# --field-end--
+# --field-start--
+fieldName=phone
+# --field-end--
+# --field-start--
+fieldName=courses
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.orfapp.cs246.orf.com.orfapp.model.Read
+tableName=read
+# --table-fields-start--
+# --field-start--
+fieldName=idTest
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=course
+# --field-end--
+# --field-start--
+fieldName=idStudent
+# --field-end--
+# --field-start--
+fieldName=year
+# --field-end--
+# --field-start--
+fieldName=month
+# --field-end--
+# --field-start--
+fieldName=week
+# --field-end--
+# --field-start--
+fieldName=WPM
+# --field-end--
+# --field-start--
+fieldName=errors
+# --field-end--
+# --field-start--
+fieldName=goalWCPM
+# --field-end--
+# --field-start--
+fieldName=text
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.orfapp.cs246.orf.com.orfapp.model.Read
+tableName=read
+# --table-fields-start--
+# --field-start--
+fieldName=idTest
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=course
+# --field-end--
+# --field-start--
+fieldName=idStudent
+# --field-end--
+# --field-start--
+fieldName=year
+# --field-end--
+# --field-start--
+fieldName=month
+# --field-end--
+# --field-start--
+fieldName=week
+# --field-end--
+# --field-start--
+fieldName=WPM
+# --field-end--
+# --field-start--
+fieldName=errors
+# --field-end--
+# --field-start--
+fieldName=goalWCPM
+# --field-end--
+# --field-start--
+fieldName=text
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.orfapp.cs246.orf.com.orfapp.model.Student
+tableName=student
+# --table-fields-start--
+# --field-start--
+fieldName=idStudent
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+canBeNull=false
+indexName=student_name_idx
+# --field-end--
+# --field-start--
+fieldName=age
+# --field-end--
+# --field-start--
+fieldName=reads
+foreignCollection=true
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
+# --table-start--
+dataClass=com.orfapp.cs246.orf.com.orfapp.model.User
+tableName=user
+# --table-fields-start--
+# --field-start--
+fieldName=idUser
+generatedId=true
+# --field-end--
+# --field-start--
+fieldName=name
+canBeNull=false
+indexName=user_name_idx
+# --field-end--
+# --field-start--
+fieldName=password
+# --field-end--
+# --field-start--
+fieldName=active
+# --field-end--
+# --field-start--
+fieldName=idTeacher
+# --field-end--
+# --table-fields-end--
+# --table-end--
+#################################
